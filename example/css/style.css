@@ -1,0 +1,35 @@
+.cowntdown-m1-main{
+    background-color: #005cbf;
+    display: inline-block;
+    padding: 10px;
+    background-image: url('https://www.picmonkey.com/blog/wp-content/uploads/2016/08/city-bokeh-resize.jpg');
+    position: relative;
+    opacity: 0.85;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cowntdown-m1-container {
+    width: 100px;
+    float: left;
+}
+.cowntdown-m1-label{
+    width: 100px;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.cowntdown-m1-container-unit {
+    position: relative;
+    width: 100px;
+}
+.cowntdown-m1-years, .cowntdown-m1-months, .cowntdown-m1-days, .cowntdown-m1-hours, .cowntdown-m1-minutes, .cowntdown-m1-seconds{
+    background-color: white;
+    width: 100px;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    float: left;
+}

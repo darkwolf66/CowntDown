@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CowntDown</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <br><br><br><br><br><br><br><br><br>
+    <div class="row justify-content-md-center">
+        <div class="col-sx-6">
+            <div class="cowntdown-m1-main">
+                    <div class="cowntdown-m1-container">
+                        <div class="cowntdown-m1-label">Meses</div>
+                        <div class="cowntdown-m1-months js-cowntdown-months"></div>
+                    </div>
+                    <div class="cowntdown-m1-container">
+                        <div class="cowntdown-m1-label">Dias</div>
+                        <div class="cowntdown-m1-days js-cowntdown-days"></div>
+                    </div>
+                    <div class="cowntdown-m1-container">
+                        <div class="cowntdown-m1-label">Horas</div>
+                        <div class="cowntdown-m1-hours js-cowntdown-hours"></div>
+                    </div>
+                    <div class="cowntdown-m1-container">
+                        <div class="cowntdown-m1-label">Minutos</div>
+                        <div class="cowntdown-m1-minutes js-cowntdown-minutes"></div>
+                    </div>
+                    <div class="cowntdown-m1-container">
+                        <div class="cowntdown-m1-label">Segundos</div>
+                        <div class="cowntdown-m1-seconds js-cowntdown-seconds"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://momentjs.com/downloads/moment.min.js"></script>
+
+<script src="../src/cowntdown.js"></script>
+<script>
+    var endingDate = "2020-01-01 00:00:00";
+    new CowntDown(endingDate);
+    setInterval(function () {
+        new CowntDown(endingDate);
+    }, 1000);
+</script>
+</html>
